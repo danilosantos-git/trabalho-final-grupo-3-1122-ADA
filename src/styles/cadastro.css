@@ -1,0 +1,42 @@
+main {
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-home img {
+  width: 100%;
+  height: auto;
+}
+
+/* css do form aqui */
+.order {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+label {
+  display: block;
+  margin: 0 50px 10px 50px;
+  color: white;
+}
+
+.order button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: var(--vermelho-text);
+  color: white;
+  padding: 15px 20px;
+  margin: 10px 50px 50px 50px;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.order button:hover {
+  background-color: var(--vermelho-header);
+}

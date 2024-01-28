@@ -1,16 +1,49 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="ShengLong - Produtos Alongados"
+      content="Loja focada na venda de produtos alongados"
+    />
+    <title>ShengLong - Cadastro de Produtos Alongados</title>
+    <link rel="stylesheet" href="../global.css" />
+    <link rel="stylesheet" href="../styles/cadastro.css" />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="ShengLong - Produtos Alongados" content="Loja focada na venda de produtos alongados">
-    <link rel="stylesheet" href="../global.css">
-    <title>ShengLong - Produtos Alongados</title>
-</head>
+  <body>
+    <script src="../scripts/headerFooter.js"></script>
+    <div id="headerContainer"></div>
+    <main class="main-content">
+      <div class="image-home">
+        <img
+          src="../../assets/fundo-home-logo.png"
+          alt="Imagem da logo escrita ShengLong - Produtos alongados"
+        />
+      </div>
 
-<body>
-
-</body>
-
+      <form class="order" id="orderForm">
+        <label for="whatsapp">Telefone WhatsApp de contato:</label>
+        <input
+          type="tel"
+          id="whatsapp"
+          name="whatsapp"
+          placeholder="+55..."
+          required
+        />
+        <button type="submit">Enviar Pedido</button>
+      </form>
+    </main>
+    <div id="footerContainer"></div>
+  </body>
 </html>
+
+<main>
+  <script>
+    document.getElementById("orderForm").onsubmit = function (event) {
+      event.preventDefault();
+      alert("Pedido enviado. Entraremos em contato para finalizar a compra.");
+    };
+  </script>
+</main>
