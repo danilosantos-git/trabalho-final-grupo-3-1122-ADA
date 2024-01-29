@@ -1,49 +1,44 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="ShengLong - Produtos Alongados"
-      content="Loja focada na venda de produtos alongados"
-    />
-    <title>ShengLong - Cadastro de Produtos Alongados</title>
-    <link rel="stylesheet" href="../global.css" />
-    <link rel="stylesheet" href="../styles/cadastro.css" />
-  </head>
 
-  <body>
-    <script src="../scripts/headerFooter.js"></script>
-    <div id="headerContainer"></div>
-    <main class="main-content">
-      <div class="image-home">
-        <img
-          src="../../assets/fundo-home-logo.png"
-          alt="Imagem da logo escrita ShengLong - Produtos alongados"
-        />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="ShengLong - Produtos Alongados" content="Loja focada na venda de produtos alongados" />
+  <title>ShengLong - Cadastro de Produtos Alongados</title>
+  <link rel="stylesheet" href="../global.css" />
+  <link rel="stylesheet" href="../styles/cadastro.css" />
+</head>
+
+<body>
+  <div id="headerContainer"></div>
+  <main class="main-content">
+    <div class="image-home">
+      <img src="../../assets/fundo-home-logo.png" alt="Imagem da logo escrita ShengLong - Produtos alongados" />
+    </div>
+
+    <form class="order" id="orderForm">
+      <div class="container">
+        <h2>Cadastre-se aqui</h2>
+        <label for="e-mail"></label>
+        <input type="text" placeholder="Dige seu e-mail" name="e-mail" required>
+        <label for="senha"></label>
+        <input type="password" placeholder="Digite sua senha" name="senha" required>
+        <label for="whatsapp"></label>
+        <input type="tel" id="whatsapp" name="whatsapp" placeholder="(xx) xxxxx-xxxx" required />
       </div>
+      <button type="submit">Cadastrar</button>
+    </form>
+  </main>
+  <div id="footerContainer"></div>
 
-      <form class="order" id="orderForm">
-        <label for="whatsapp">Telefone WhatsApp de contato:</label>
-        <input
-          type="tel"
-          id="whatsapp"
-          name="whatsapp"
-          placeholder="+55..."
-          required
-        />
-        <button type="submit">Enviar Pedido</button>
-      </form>
-    </main>
-    <div id="footerContainer"></div>
-  </body>
-</html>
-
-<main>
+  <script src="../scripts/headerFooter.js"></script>
   <script>
     document.getElementById("orderForm").onsubmit = function (event) {
       event.preventDefault();
-      alert("Pedido enviado. Entraremos em contato para finalizar a compra.");
+      alert("Cadastro efetuado com sucesso!");
     };
   </script>
-</main>
+</body>
+
+</html>

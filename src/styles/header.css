@@ -2,14 +2,14 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100vw;
 }
 
 .header {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 100vw;
-
+  width: 100%;
   color: var(--vemelho-logo);
   font-size: 26px;
   font-style: normal;
