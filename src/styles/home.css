@@ -1,211 +1,25 @@
-:root {
-    --rosa-fundo: #F78282;
-    --vermelho-header: #CD313E;
-    --vemelho-logo: #EB423F;
-    --vermelho-text: #D44D51;
-    --vermelho-alt: #D04A3B;
-}
-
-header {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    align-items: center;
-}
-
-.header {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 1440px;
-}
-
-ul {
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
-    display: flex;
-    gap: 60px;
-    list-style-type: none;
-}
-
-.nav-links {
-    padding-left: 0;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: var(--vermelho-header);
-}
-
-/* Adição do css que estava prensente internamente no código, para o arquivo externo */
-
-.header {
-    color: var(--vemelho-logo);
-    font-size: 26px;
-    font-style: normal;
-    font-weight: 900;
-    line-height: 38px;
-}
-
-.header ul {
-    color: var(--vermelho-header);
-    /* Removi a fonte errada */
-}
-
-.header-button {
-    width: 160px;
-    height: 26px;
-    flex-shrink: 0;
-    border-radius: 2px;
-    background: var(--vemelho-logo);
-    font-size: 12px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-}
-
-.header img {
-    width: 9.8rem;
-    height: 3.8rem;
-}
-
-button {
-    font-size: 16px;
-    width: 189px;
-    height: 36px;
-    flex-shrink: 0;
-    background-color: var(--vermelho-header);
-    color: #fff;
-    border: none;
-    /* Retirei as bordas dos botões */
-    border-radius: 2px;
-}
-
-button:hover {
-    cursor: pointer;
-}
-
-/* main */
-main {
-    display: flex;
-    /* Remoção do fundo da div */
-    padding-top: 240px;
-    padding-bottom: 440px;
-    margin-bottom: 100px;
-    margin-left: 87px;
-    /* Reposicionado conforme o figma */
-}
-
-/* Adição do estilo do h2 */
 .content h2 {
-    font-size: 50px;
-    font-style: normal;
-    font-weight: bolder;
-    line-height: 66px;
-    letter-spacing: 1px;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: bolder;
+  line-height: 66px;
+  letter-spacing: 1px;
 }
 
-/* Adição do CSS tag p */
 .content p {
-    color: var(--vermelho-text);
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 30px;
+  color: var(--vermelho-text);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
 }
 
 .content {
-    /* flex: 3; */
-    padding-right: 20px;
-    /* Adicione um espaço à direita entre o texto e a imagem */
-    width: 70%;
+  padding-right: 20px;
+  width: 70%;
 }
 
 .image-home img {
-    width: 100%;
-    /* Ajusta a largura da imagem para ocupar 100% do contêiner */
-    height: auto;
-    /* Mantém a proporção da imagem */
-}
-
-/* footer */
-footer {
-    font-size: 14px;
-    background-color: var(--rosa-fundo);
-    width: 100%;
-    bottom: 0;
-    display: flex;
-    justify-content: center;
-}
-
-.footer-container {
-    width: 1110px;
-    height: 216px;
-    flex-shrink: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.footer-header,
-.footer-bottom {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    padding-right: 0px;
-}
-
-.footer-header {
-    margin-top: 50px;
-}
-
-.span-footer {
-    color: #ffffff;
-}
-
-.button-footer {
-    font-size: 12px;
-    width: 109px;
-    height: 26px;
-    border-radius: 2px;
-    background: var(--vermelho-alt);
-    flex-shrink: 0;
-}
-
-.line {
-    width: 100%;
-    height: 1px;
-    background-color: white;
-    margin-top: 50px;
-    margin-bottom: 24px;
-}
-
-/* Estilo da navegação do footer (home/about/contact) */
-.footer-nav {
-    color: white;
-}
-
-.footer-bottom ul {
-    color: #ffffff;
-    /* margin-right: 20px; */
-    /* Alinhou a margem dos ícones */
-    display: flex;
-    gap: 20px;
-    padding-left: 0px;
-    padding-right: 0px;
-    align-items: center;
-}
-
-.footer-bottom a {
-    text-decoration: none;
-}
-
-/* Para tornar o rodapé responsivo */
-@media screen and (max-width: 1440px) {
-    .footer-container {
-        width: 83%;
-    }
+  width: 100%;
+  height: auto;
 }
