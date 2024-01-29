@@ -38,6 +38,11 @@ main {
   z-index: 100;
 }
 
+.img-tbody {
+  width: 3rem;
+  height: 3rem;
+}
+
 .catalog h3 {
   color: var(--vermelho-text);
 }
@@ -47,7 +52,7 @@ main {
   border-collapse: collapse;
   margin-top: 20px;
   border: 1px solid var(--vermelho-text);
-  text-align: left;
+  text-align: center;
 }
 
 .catalog table thead th {
